@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>BBW vehicle fleet — Devino șofer Bolt și Uber în București și Buzău</title>
+  <meta name="description" content="BBW vehicle fleet: comision 9,5%, contabilitate inclusă și ajutor la înscriere, de la atestat până la aplicație. Recrutăm șoferi Bolt și Uber în București și Buzău.">
+  <meta name="theme-color" content="#0a0c0b">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Open Graph (completează og:url și og:image după publicarea site-ului) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ro_RO">
+  <meta property="og:site_name" content="BBW vehicle fleet">
+  <meta property="og:title" content="Devino șofer Bolt și Uber alături de BBW vehicle fleet">
+  <meta property="og:description" content="Comision 9,5% din venitul net și contabilitate inclusă. Recrutăm șoferi Bolt și Uber în București și Buzău.">
+  <!-- <meta property="og:url" content="https://domeniul-tau.ro/"> -->
+  <!-- <meta property="og:image" content="https://domeniul-tau.ro/images/og-image.jpg"> -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon configurabil: înlocuiește cu <link rel="icon" href="favicon.svg"> sau favicon.png -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23111111'/%3E%3Crect x='26' y='22' width='9' height='56' fill='%23ffffff'/%3E%3Cpath d='M40 22 H56 A13 13 0 0 1 56 48 H40 Z M40 52 H59 A13 13 0 0 1 59 78 H40 Z' fill='%23ffffff'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Marchează că JavaScript este activ (pentru animațiile de apariție, fără „flash” de conținut) -->
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="cars.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#continut">Sari la conținut</a>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav">
+      <a class="brand" href="#acasa" aria-label="BBW vehicle fleet — mergi la început">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 100 100"><rect x="26" y="22" width="9" height="56" fill="currentColor"/><path d="M40 22 H56 A13 13 0 0 1 56 48 H40 Z M40 52 H59 A13 13 0 0 1 59 78 H40 Z" fill="currentColor"/></svg>
+        </span>
+        <span class="brand__name"><span class="brand__bbw">BBW</span><span class="brand__sub">Vehicle Fleet</span></span>
+      </a>
+
+      <nav class="nav__menu" id="primary-nav" aria-label="Navigație principală">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#acasa">Acasă</a></li>
+          <li><a class="nav__link" href="#avantaje">Avantaje</a></li>
+          <li><a class="nav__link" href="#cum-functioneaza">Cum funcționează</a></li>
+          <li><a class="nav__link" href="#verifica-masina">Verifică mașina</a></li>
+          <li><a class="nav__link" href="#intrebari">Întrebări frecvente</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav__mobile-extra">
+          <a class="btn btn--primary btn--block" href="#inscriere">Înscrie-te în flotă</a>
+          <a class="btn btn--wa btn--block" data-contact="whatsapp" href="https://wa.me/40752266727" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.6c.2 2.6 2.4 5 5.2 5.6l1.1-1.2 1.8.9-.4 1.5c-3.8.3-8.2-3.7-8-7.6l1.5-.4.9 1.7z"/></svg>
+            Scrie-ne pe WhatsApp
+          </a>
+        </div>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--primary btn--sm nav__cta" href="#inscriere">Înscrie-te în flotă</a>
+        <button class="nav__toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Deschide meniul">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="continut">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="acasa" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow eyebrow--pill reveal">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Recrutăm șoferi în București și Buzău
+          </p>
+          <h1 class="hero__title reveal" id="hero-title" data-delay="1">
+            <!-- Textul complet pentru cititoare de ecran și Google; partea vizuală se rotește din script.js (CONFIG.heroPhrases) -->
+            <span class="sr-only">Flote neserioase? Nu și la noi.</span>
+            <span class="hero__title-visual" aria-hidden="true">
+              <span class="rotator" data-rotator><span class="rotator__item is-active">Flote neserioase?</span></span>
+              <span class="text-accent rotator__tail">Nu și la noi.</span>
+            </span>
+          </h1>
+          <p class="hero__lead reveal" data-delay="2">
+            Te-ai săturat să nu-ți răspundă nimeni la telefon și la solicitări? Comision mult prea mare și nu mai rămâi cu nimic în buzunar la sfârșitul lunii? La noi ai <strong class="hero__hl">comision de doar 9,5% din venitul net</strong>, contabilitatea e inclusă și vorbești direct cu echipa.
+          </p>
+          <div class="hero__actions reveal" data-delay="3">
+            <a class="btn btn--outline btn--lg" href="#inscriere">
+              Înscrie-te acum
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--wa btn--lg" data-contact="whatsapp" href="https://wa.me/40752266727" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.6c.2 2.6 2.4 5 5.2 5.6l1.1-1.2 1.8.9-.4 1.5c-3.8.3-8.2-3.7-8-7.6l1.5-.4.9 1.7z"/></svg>
+              Contactează-ne pe WhatsApp
+            </a>
+          </div>
+          <a class="hero__call reveal" data-delay="4" data-contact="phone" href="tel:+40752266727">
+            <span class="hero__call-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+            </span>
+            <span>Sună acum <strong data-contact-label="phone">0752 266 727</strong></span>
+          </a>
+
+          <ul class="hero__meta reveal" data-delay="5" aria-label="Pe scurt">
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Comision 9,5% din net</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Contabilitate inclusă</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>București și Buzău</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Discuți direct cu echipa</li>
+          </ul>
+        </div>
+
+        <!-- Vizual hero: hartă stilizată + carduri. Opțional, o fotografie configurabilă în script.js (CONFIG.heroImage) -->
+        <div class="hero__visual reveal" data-delay="2">
+          <div class="visual-frame">
+            <div class="hero__photo" id="hero-photo" hidden></div>
+            <svg class="map" id="hero-map" viewBox="0 0 480 560" role="img" aria-label="Ilustrație: traseu urban pe o hartă stilizată">
+              <defs>
+                <linearGradient id="routeGrad" x1="0" y1="1" x2="1" y2="0">
+                  <stop offset="0" stop-color="#c8f45a" stop-opacity=".35"/>
+                  <stop offset="1" stop-color="#c8f45a"/>
+                </linearGradient>
+                <radialGradient id="glow" cx=".75" cy=".2" r=".7">
+                  <stop offset="0" stop-color="#c8f45a" stop-opacity=".18"/>
+                  <stop offset="1" stop-color="#c8f45a" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="480" height="560" fill="url(#glow)"/>
+              <g class="map__blocks">
+                <rect x="24" y="30" width="96" height="70" rx="8"/><rect x="140" y="30" width="120" height="70" rx="8"/><rect x="280" y="30" width="70" height="40" rx="8"/>
+                <rect x="24" y="120" width="60" height="110" rx="8"/><rect x="104" y="120" width="76" height="60" rx="8"/><rect x="200" y="120" width="60" height="40" rx="8"/>
+                <rect x="370" y="120" width="86" height="90" rx="8"/><rect x="290" y="260" width="80" height="70" rx="8"/><rect x="390" y="250" width="66" height="120" rx="8"/>
+                <rect x="24" y="250" width="56" height="80" rx="8"/><rect x="190" y="320" width="76" height="60" rx="8"/><rect x="24" y="470" width="110" height="64" rx="8"/>
+                <rect x="190" y="410" width="140" height="56" rx="8"/><rect x="350" y="400" width="106" height="134" rx="8"/><rect x="154" y="486" width="176" height="48" rx="8"/>
+              </g>
+              <path class="map__river" d="M-10 400 C 80 380, 120 430, 210 395 S 360 360, 490 330"/>
+              <g class="map__streets">
+                <path d="M0 110h480M0 240h480M0 390h480M0 470h480M130 0v560M270 0v560M380 0v560M90 0v560"/>
+              </g>
+              <path class="map__route-bg" d="M70 450 C 70 370, 150 370, 160 310 S 250 250, 300 236 S 410 180, 412 92"/>
+              <path class="map__route" id="route-path" d="M70 450 C 70 370, 150 370, 160 310 S 250 250, 300 236 S 410 180, 412 92" stroke="url(#routeGrad)"/>
+              <circle class="map__start" cx="70" cy="450" r="7"/>
+              <g class="map__end">
+                <circle class="map__pulse" cx="412" cy="92" r="10"/>
+                <circle cx="412" cy="92" r="8" fill="#c8f45a"/>
+                <circle cx="412" cy="92" r="3" fill="#0b0f05"/>
+              </g>
+              <g class="map__car">
+                <rect x="-11" y="-7" width="22" height="14" rx="5" fill="#f4f6f3"/>
+                <rect x="1" y="-5" width="6" height="10" rx="2" fill="#0b0f05" opacity=".7"/>
+                <animateMotion dur="9s" repeatCount="indefinite" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+                  <mpath href="#route-path"/>
+                </animateMotion>
+              </g>
+            </svg>
+
+            <div class="city-badges">
+              <span class="badge badge--label">Orașe</span>
+              <div class="city-badges__row">
+                <span class="badge badge--city"><span class="badge__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>București</span>
+                <span class="badge badge--city"><span class="badge__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>Buzău</span>
+              </div>
+              <span class="badge badge--label badge--spaced">Platforme</span>
+              <div class="city-badges__row">
+                <span class="badge badge--city"><span class="badge__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 17h14l-1.5-5.5A2 2 0 0 0 15.6 10H8.4a2 2 0 0 0-1.9 1.5z"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg></span>Bolt</span>
+                <span class="badge badge--city"><span class="badge__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 17h14l-1.5-5.5A2 2 0 0 0 15.6 10H8.4a2 2 0 0 0-1.9 1.5z"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg></span>Uber</span>
+              </div>
+            </div>
+
+            <div class="float-card float-card--bottom">
+              <div class="float-card__row">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span class="float-card__label">Cerere de înscriere</span>
+              </div>
+              <span class="float-card__value">Formular → WhatsApp → discuție</span>
+              <div class="progress" aria-hidden="true"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BANDĂ ========== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Bolt</span><span>Uber</span><span>București</span><span>Buzău</span><span>Înscriere online</span><span>WhatsApp</span><span>Asistență directă</span>
+        <span>Bolt</span><span>Uber</span><span>București</span><span>Buzău</span><span>Înscriere online</span><span>WhatsApp</span><span>Asistență directă</span>
+      </div>
+    </div>
+
+    <!-- ========== AVANTAJE ========== -->
+    <section class="section" id="avantaje" aria-labelledby="avantaje-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">De ce să colaborezi cu noi</p>
+          <h2 class="section__title" id="avantaje-title">Tu conduci.<br> <span class="text-accent">Noi ne ocupăm de restul.</span></h2>
+          <p class="section__lead">Te ajutăm cu tot procesul de înscriere, de la atestat până la activarea aplicației, ca tu să te concentrezi doar pe drum.</p>
+        </header>
+
+        <div class="bento">
+          <article class="card card--feature reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg>
+            </div>
+            <h3 class="card__title">De la atestat până la prima cursă</h3>
+            <p class="card__text">Te ghidăm pas cu pas prin tot procesul: atestat, documente, înregistrare și activarea contului în aplicație. Știi mereu ce urmează și ce mai ai de făcut.</p>
+            <div class="mini-steps" aria-hidden="true">
+              <span class="mini-steps__item is-done">Atestat</span>
+              <span class="mini-steps__line"></span>
+              <span class="mini-steps__item is-done">Documente</span>
+              <span class="mini-steps__line"></span>
+              <span class="mini-steps__item">Aplicație activă</span>
+            </div>
+          </article>
+
+          <article class="card card--stat reveal" data-delay="1">
+            <span class="stat__value">9,5<span>%</span></span>
+            <h3 class="card__title">Comision de doar 9,5% din venitul net</h3>
+            <p class="card__text">Comisionul se calculează din venitul tău net din aplicație, nu din totalul curselor. Mai mulți bani rămân la tine la sfârșitul lunii.</p>
+          </article>
+
+          <article class="card reveal" data-delay="1">
+            <div class="card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01"/></svg>
+            </div>
+            <h3 class="card__title">Nu mai plătești contabil</h3>
+            <p class="card__text">Contabilitatea e inclusă în colaborare, așa că nu mai plătești separat un contabil și nu-ți mai bați capul cu actele.</p>
+          </article>
+
+          <article class="card reveal" data-delay="2">
+            <div class="card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-5.1A8 8 0 1 1 21 12z"/><path d="M8.5 11h7M8.5 14h4"/></svg>
+            </div>
+            <h3 class="card__title">Asistență și comunicare directă</h3>
+            <p class="card__text">Răspundem la telefon și pe WhatsApp. Ai un om de contact, nu un număr care sună în gol.</p>
+          </article>
+
+          <article class="card reveal" data-delay="3">
+            <div class="card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
+            </div>
+            <h3 class="card__title">Informații clare despre colaborare</h3>
+            <p class="card__text">Poți solicita detalii despre condițiile colaborării înainte de a lua orice decizie.</p>
+          </article>
+
+          <article class="card card--wide reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <div class="card--wide__body">
+              <h3 class="card__title">Totul legal, cu acte în regulă</h3>
+              <p class="card__text">Fără muncă la negru și fără plicuri de la Fisc în cutia poștală. Lucrezi doar cu contract de muncă și cu toate actele în regulă.</p>
+            </div>
+            <ul class="card--wide__tags" aria-label="Pe scurt">
+              <li><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Contract de muncă</li>
+              <li><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Acte în regulă</li>
+              <li><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Fără muncă la negru</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Condiții comerciale confirmate (comisioane, bonusuri, mașini etc.) — se afișează DOAR dacă le completezi în CONFIG.offers din script.js -->
+        <div class="offers" id="offers" hidden>
+          <h3 class="offers__title">Condiții actuale ale colaborării</h3>
+          <div class="offers__grid" id="offers-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CUM FUNCȚIONEAZĂ ========== -->
+    <section class="section section--alt" id="cum-functioneaza" aria-labelledby="pasi-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Cum funcționează</p>
+          <h2 class="section__title" id="pasi-title">Patru pași până la colaborare</h2>
+          <p class="section__lead">Un traseu simplu, de la primul mesaj până la începerea activității.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <div class="step__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+            </div>
+            <h3 class="step__title">Completezi formularul</h3>
+            <p class="step__text">Ne lași datele de contact și câteva informații despre tine. Durează doar câteva minute.</p>
+          </li>
+          <li class="step reveal" data-delay="1">
+            <span class="step__num">02</span>
+            <div class="step__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+            </div>
+            <h3 class="step__title">Te contactăm</h3>
+            <p class="step__text">Revenim cu un mesaj sau un apel pentru a discuta detaliile colaborării.</p>
+          </li>
+          <li class="step reveal" data-delay="2">
+            <span class="step__num">03</span>
+            <div class="step__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3 class="step__title">Verificăm documentele</h3>
+            <p class="step__text">Analizăm împreună condițiile și documentele necesare în situația ta.</p>
+          </li>
+          <li class="step reveal" data-delay="3">
+            <span class="step__num">04</span>
+            <div class="step__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M5 17h14l-1.5-5.5A2 2 0 0 0 15.6 10H8.4a2 2 0 0 0-1.9 1.5z"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/><path d="M3 13h2M19 13h2"/></svg>
+            </div>
+            <h3 class="step__title">Începi colaborarea</h3>
+            <p class="step__text">Urmezi pașii de înscriere și începi activitatea, după îndeplinirea cerințelor aplicabile.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== VERIFICĂ MAȘINA (eligibilitate) ========== -->
+    <section class="section" id="verifica-masina" aria-labelledby="car-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Verifică mașina</p>
+          <h2 class="section__title" id="car-title">Mașina ta e eligibilă pentru <span class="text-accent">Bolt și Uber?</span></h2>
+          <p class="section__lead">Flota nu are mașini proprii, așa că vei lucra cu mașina ta. Completează datele de mai jos și afli pe loc dacă îndeplinește cerințele de bază.</p>
+        </header>
+
+        <div class="car-layout">
+          <div class="form-card reveal">
+            <form class="form" id="car-form" novalidate>
+              <div class="form__grid">
+                <div class="field" data-field="brand">
+                  <label class="field__label" for="c-brand">Marca <span class="req" aria-hidden="true">*</span></label>
+                  <div class="select-wrap">
+                    <select class="field__input" id="c-brand" name="brand" required aria-describedby="e-brand">
+                      <option value="">Alege marca</option>
+                    </select>
+                  </div>
+                  <p class="field__error" id="e-brand" aria-live="polite"></p>
+                </div>
+                <div class="field" data-field="model">
+                  <label class="field__label" for="c-model">Modelul <span class="req" aria-hidden="true">*</span></label>
+                  <div class="select-wrap">
+                    <select class="field__input" id="c-model" name="model" required disabled aria-describedby="e-model">
+                      <option value="">Alege întâi marca</option>
+                    </select>
+                  </div>
+                  <p class="field__error" id="e-model" aria-live="polite"></p>
+                </div>
+                <div class="field" data-field="brandOther" hidden>
+                  <label class="field__label" for="c-brand-other">Scrie marca <span class="req" aria-hidden="true">*</span></label>
+                  <input class="field__input" id="c-brand-other" name="brandOther" type="text" maxlength="40" aria-describedby="e-brandOther" autocomplete="off">
+                  <p class="field__error" id="e-brandOther" aria-live="polite"></p>
+                </div>
+                <div class="field" data-field="modelOther" hidden>
+                  <label class="field__label" for="c-model-other">Scrie modelul <span class="req" aria-hidden="true">*</span></label>
+                  <input class="field__input" id="c-model-other" name="modelOther" type="text" maxlength="40" aria-describedby="e-modelOther" autocomplete="off">
+                  <p class="field__error" id="e-modelOther" aria-live="polite"></p>
+                </div>
+                <div class="field" data-field="year">
+                  <label class="field__label" for="c-year">Anul fabricației <span class="req" aria-hidden="true">*</span></label>
+                  <div class="select-wrap">
+                    <select class="field__input" id="c-year" name="year" required aria-describedby="e-year h-year">
+                      <option value="">Alege anul</option>
+                    </select>
+                  </div>
+                  <p class="field__error" id="e-year" aria-live="polite"></p>
+                  <p class="field__hint" id="h-year" hidden></p>
+                </div>
+                <div class="field" data-field="fuel">
+                  <label class="field__label" for="c-fuel">Combustibil <span class="req" aria-hidden="true">*</span></label>
+                  <div class="select-wrap">
+                    <select class="field__input" id="c-fuel" name="fuel" required aria-describedby="e-fuel h-fuel">
+                      <option value="">Alege</option>
+                      <option value="Benzină">Benzină</option>
+                      <option value="Benzină + GPL">Benzină + GPL</option>
+                      <option value="Motorină">Motorină</option>
+                      <option value="Hibrid">Hibrid</option>
+                      <option value="Electric">Electric</option>
+                    </select>
+                  </div>
+                  <p class="field__error" id="e-fuel" aria-live="polite"></p>
+                  <p class="field__hint" id="h-fuel" hidden></p>
+                </div>
+                <fieldset class="field" data-field="doors" aria-describedby="e-doors">
+                  <legend class="field__label">Număr de uși <span class="req" aria-hidden="true">*</span></legend>
+                  <div class="segmented">
+                    <label class="segmented__opt"><input type="radio" name="doors" value="2-3" required><span>2–3 uși</span></label>
+                    <label class="segmented__opt"><input type="radio" name="doors" value="4-5"><span>4–5 uși</span></label>
+                  </div>
+                  <p class="field__error" id="e-doors" aria-live="polite"></p>
+                </fieldset>
+                <div class="field" data-field="seats">
+                  <label class="field__label" for="c-seats">Locuri (inclusiv șoferul) <span class="req" aria-hidden="true">*</span></label>
+                  <div class="select-wrap">
+                    <select class="field__input" id="c-seats" name="seats" required aria-describedby="e-seats">
+                      <option value="">Alege</option>
+                      <option value="4">4 sau mai puține</option>
+                      <option value="5">5 locuri</option>
+                      <option value="6">6 locuri</option>
+                      <option value="7">7 locuri</option>
+                      <option value="8">8–9 locuri</option>
+                      <option value="10">10 sau mai multe</option>
+                    </select>
+                  </div>
+                  <p class="field__error" id="e-seats" aria-live="polite"></p>
+                </div>
+                <fieldset class="field field--full" data-field="ac" aria-describedby="e-ac">
+                  <legend class="field__label">Aerul condiționat funcționează? <span class="req" aria-hidden="true">*</span></legend>
+                  <div class="segmented">
+                    <label class="segmented__opt"><input type="radio" name="ac" value="Da" required><span>Da</span></label>
+                    <label class="segmented__opt"><input type="radio" name="ac" value="Nu"><span>Nu</span></label>
+                  </div>
+                  <p class="field__error" id="e-ac" aria-live="polite"></p>
+                </fieldset>
+              </div>
+              <button class="btn btn--primary btn--lg btn--block" type="submit">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M5 17h14l-1.5-5.5A2 2 0 0 0 15.6 10H8.4a2 2 0 0 0-1.9 1.5z"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/><path d="M3 13h2M19 13h2"/></svg>
+                Verifică eligibilitatea
+              </button>
+            </form>
+          </div>
+
+          <div class="car-result reveal" data-delay="1" id="car-result" tabindex="-1">
+            <div class="car-result__empty">
+              <span class="car-result__empty-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 17h14l-1.5-5.5A2 2 0 0 0 15.6 10H8.4a2 2 0 0 0-1.9 1.5z"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/><path d="M3 13h2M19 13h2"/></svg></span>
+              <p class="car-result__empty-title">Rezultatul apare aici</p>
+              <p class="car-result__empty-text">Verificăm vechimea, numărul de uși și de locuri și aerul condiționat, conform cerințelor generale pentru Bolt și Uber.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FORMULAR ========== -->
+    <section class="section" id="inscriere" aria-labelledby="form-title">
+      <div class="container form-layout">
+        <aside class="form-aside reveal">
+          <p class="eyebrow">Înscriere</p>
+          <h2 class="section__title" id="form-title">Înscrie-te în flotă</h2>
+          <p class="section__lead">Completează datele de mai jos. Verifici mesajul, apoi îl trimiți pe WhatsApp cu un singur tap.</p>
+
+          <ol class="how-send">
+            <li><span>1</span>Completezi formularul</li>
+            <li><span>2</span>Verifici mesajul generat</li>
+            <li><span>3</span>Se deschide WhatsApp cu mesajul precompletat</li>
+            <li><span>4</span>Apeși „Trimite” în WhatsApp — abia atunci primim înscrierea</li>
+          </ol>
+
+          <div class="notice">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            <p>Site-ul nu salvează și nu trimite datele tale în fundal. Informațiile ajung la noi doar prin mesajul pe care îl trimiți tu în WhatsApp.</p>
+          </div>
+        </aside>
+
+        <div class="form-card reveal" data-delay="1">
+          <form class="form" id="signup-form" novalidate>
+            <div class="form__grid">
+              <div class="field field--full" data-field="name">
+                <label class="field__label" for="f-name">Nume și prenume <span class="req" aria-hidden="true">*</span></label>
+                <input class="field__input" id="f-name" name="name" type="text" autocomplete="name" maxlength="80" required aria-describedby="e-name" placeholder="ex. Andrei Popescu">
+                <p class="field__error" id="e-name" aria-live="polite"></p>
+              </div>
+
+              <div class="field" data-field="phone">
+                <label class="field__label" for="f-phone">Număr de telefon <span class="req" aria-hidden="true">*</span></label>
+                <input class="field__input" id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" required aria-describedby="e-phone" placeholder="07xx xxx xxx">
+                <p class="field__error" id="e-phone" aria-live="polite"></p>
+              </div>
+
+              <div class="field" data-field="email">
+                <label class="field__label" for="f-email">E-mail <span class="opt">(opțional)</span></label>
+                <input class="field__input" id="f-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="100" aria-describedby="e-email" placeholder="nume@exemplu.ro">
+                <p class="field__error" id="e-email" aria-live="polite"></p>
+              </div>
+
+              <div class="field field--full" data-field="city">
+                <label class="field__label" for="f-city">Orașul în care dorești să lucrezi <span class="req" aria-hidden="true">*</span></label>
+                <div class="select-wrap">
+                  <select class="field__input" id="f-city" name="city" required aria-describedby="e-city">
+                    <option value="">Alege orașul</option>
+                    <option value="București">București</option>
+                    <option value="Buzău">Buzău</option>
+                  </select>
+                </div>
+                <p class="field__error" id="e-city" aria-live="polite"></p>
+              </div>
+
+              <fieldset class="field field--full" data-field="platform" aria-describedby="e-platform">
+                <legend class="field__label">Platforma de interes <span class="req" aria-hidden="true">*</span></legend>
+                <div class="segmented segmented--3">
+                  <label class="segmented__opt"><input type="radio" name="platform" value="Bolt" required><span>Bolt</span></label>
+                  <label class="segmented__opt"><input type="radio" name="platform" value="Uber"><span>Uber</span></label>
+                  <label class="segmented__opt"><input type="radio" name="platform" value="Ambele"><span>Ambele</span></label>
+                </div>
+                <p class="field__error" id="e-platform" aria-live="polite"></p>
+              </fieldset>
+
+              <fieldset class="field" data-field="experience" aria-describedby="e-experience">
+                <legend class="field__label">Ai experiență ca șofer ridesharing? <span class="req" aria-hidden="true">*</span></legend>
+                <div class="segmented">
+                  <label class="segmented__opt"><input type="radio" name="experience" value="Da" required><span>Da</span></label>
+                  <label class="segmented__opt"><input type="radio" name="experience" value="Nu"><span>Nu</span></label>
+                </div>
+                <p class="field__error" id="e-experience" aria-live="polite"></p>
+              </fieldset>
+
+              <fieldset class="field" data-field="car" aria-describedby="e-car">
+                <legend class="field__label">Ai mașină proprie? <span class="req" aria-hidden="true">*</span></legend>
+                <div class="segmented">
+                  <label class="segmented__opt"><input type="radio" name="car" value="Da" required><span>Da</span></label>
+                  <label class="segmented__opt"><input type="radio" name="car" value="Nu"><span>Nu</span></label>
+                </div>
+                <p class="field__error" id="e-car" aria-live="polite"></p>
+                <p class="field__note" id="car-note" hidden>Flota nu pune la dispoziție mașini. Pentru colaborare ai nevoie de o mașină care îndeplinește cerințele platformelor. <a class="link" href="#verifica-masina">Verifică eligibilitatea</a></p>
+              </fieldset>
+
+              <div class="field field--full" data-field="message">
+                <label class="field__label" for="f-message">Mesaj suplimentar <span class="opt">(opțional)</span></label>
+                <textarea class="field__input field__input--area" id="f-message" name="message" rows="3" maxlength="500" aria-describedby="e-message c-message" placeholder="Ceva ce ar trebui să știm? (disponibilitate, întrebări etc.)"></textarea>
+                <div class="field__foot">
+                  <p class="field__error" id="e-message" aria-live="polite"></p>
+                  <span class="field__counter" id="c-message">0 / 500</span>
+                </div>
+              </div>
+
+              <div class="field field--full" data-field="consent">
+                <label class="check">
+                  <input type="checkbox" name="consent" id="f-consent" required aria-describedby="e-consent">
+                  <span class="check__box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>
+                  <span class="check__text">Am luat la cunoștință <a href="#politica-confidentialitate" data-open-privacy>politica de confidențialitate</a> și înțeleg că datele vor fi transmise prin WhatsApp, doar dacă trimit eu mesajul. <span class="req" aria-hidden="true">*</span></span>
+                </label>
+                <p class="field__error" id="e-consent" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <button class="btn btn--primary btn--lg btn--block" type="submit" id="form-submit">
+              <span class="btn__label">Continuă — verifică mesajul</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+            <p class="form__hint"><span class="req">*</span> câmpuri obligatorii</p>
+          </form>
+
+          <!-- Pasul 2: previzualizare + trimitere pe WhatsApp -->
+          <div class="review" id="review" hidden tabindex="-1" aria-labelledby="review-title">
+            <div class="review__head">
+              <span class="review__badge">Pasul 2 din 2</span>
+              <h3 class="review__title" id="review-title">Verifică mesajul și trimite-l pe WhatsApp</h3>
+              <p class="review__text">Acesta este mesajul care se va deschide în WhatsApp. Înscrierea ajunge la noi abia după ce apeși <strong>Trimite</strong> în aplicație.</p>
+            </div>
+
+            <pre class="review__preview" id="review-preview"></pre>
+
+            <div class="review__actions">
+              <a class="btn btn--wa btn--lg btn--block" id="wa-send" href="https://wa.me/40752266727" target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.6c.2 2.6 2.4 5 5.2 5.6l1.1-1.2 1.8.9-.4 1.5c-3.8.3-8.2-3.7-8-7.6l1.5-.4.9 1.7z"/></svg>
+                <span class="btn__label">Trimite înscrierea pe WhatsApp</span>
+              </a>
+              <div class="review__secondary">
+                <button class="btn btn--ghost" type="button" id="review-edit">
+                  <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+                  Modifică datele
+                </button>
+                <button class="btn btn--ghost" type="button" id="review-copy">
+                  <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+                  <span class="btn__label">Copiază mesajul</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="review__status" id="review-status" role="status" aria-live="polite" hidden></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section__title" id="contact-title">Ai întrebări? Hai să discutăm!</h2>
+          <p class="section__lead">Alege varianta cea mai comodă pentru tine. Îți răspundem cât de repede putem.</p>
+        </header>
+
+        <div class="contact-grid">
+          <a class="contact-card contact-card--wa reveal" data-contact="whatsapp" href="https://wa.me/40752266727" target="_blank" rel="noopener">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.6c.2 2.6 2.4 5 5.2 5.6l1.1-1.2 1.8.9-.4 1.5c-3.8.3-8.2-3.7-8-7.6l1.5-.4.9 1.7z"/></svg>
+            </span>
+            <span class="contact-card__label">WhatsApp</span>
+            <span class="contact-card__value" data-contact-label="phone">0752 266 727</span>
+            <span class="contact-card__cta">Scrie-ne acum <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </a>
+          <a class="contact-card reveal" data-delay="1" data-contact="phone" href="tel:+40752266727">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+            </span>
+            <span class="contact-card__label">Telefon</span>
+            <span class="contact-card__value" data-contact-label="phone">0752 266 727</span>
+            <span class="contact-card__cta">Sună acum <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </a>
+          <a class="contact-card reveal" data-delay="2" data-contact="email" href="mailto:babauvlad@gmail.com">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </span>
+            <span class="contact-card__label">E-mail</span>
+            <span class="contact-card__value" data-contact-label="email">babauvlad@gmail.com</span>
+            <span class="contact-card__cta">Trimite un e-mail <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="section" id="intrebari" aria-labelledby="faq-title">
+      <div class="container faq-layout">
+        <header class="section__head reveal">
+          <p class="eyebrow">Întrebări frecvente</p>
+          <h2 class="section__title" id="faq-title">Răspunsuri la întrebările des întâlnite</h2>
+          <p class="section__lead">Nu găsești ce cauți? <a class="link" data-contact="whatsapp" href="https://wa.me/40752266727" target="_blank" rel="noopener">Scrie-ne pe WhatsApp</a> și îți răspundem direct.</p>
+        </header>
+
+        <div class="faq reveal" data-delay="1">
+          <div class="faq__item">
+            <h3 class="faq__q"><button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-1">Cum mă pot înscrie în flotă?<span class="faq__plus" aria-hidden="true"></span></button></h3>
+            <div class="faq__panel" id="faq-1" role="region"><div class="faq__inner"><p>Completează formularul de pe această pagină și trimite mesajul generat pe WhatsApp, sau contactează-ne direct telefonic. Revenim apoi pentru a discuta detaliile și pașii următori.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q"><button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-2">Ce documente sunt necesare?<span class="faq__plus" aria-hidden="true"></span></button></h3>
+            <div class="faq__panel" id="faq-2" role="region"><div class="faq__inner"><p>Documentele depind de platformă, de situația ta și de cerințele legale în vigoare pentru activitatea de transport alternativ. De regulă sunt necesare actul de identitate și permisul de conducere, alături de alte documente specifice. Îți comunicăm lista exactă în cadrul discuției.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q"><button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-3">Pot colabora dacă am deja o mașină?<span class="faq__plus" aria-hidden="true"></span></button></h3>
+            <div class="faq__panel" id="faq-3" role="region"><div class="faq__inner"><p>Da, și chiar e necesar: flota nu pune la dispoziție mașini proprii, așa că lucrezi cu mașina ta. Ea trebuie să îndeplinească cerințele legale și ale platformelor (de exemplu, maximum 15 ani vechime și minimum 4 uși). Poți afla rapid dacă e eligibilă în secțiunea <a class="link" href="#verifica-masina">Verifică mașina</a>, iar restul verificărilor le facem împreună.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q"><button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-4">Pot lucra pe Bolt și pe Uber?<span class="faq__plus" aria-hidden="true"></span></button></h3>
+            <div class="faq__panel" id="faq-4" role="region"><div class="faq__inner"><p>În formular poți alege Bolt, Uber sau ambele. Discutăm apoi variantele disponibile în cazul tău și ce presupune fiecare.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q"><button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-5">Cum aflu condițiile financiare ale colaborării?<span class="faq__plus" aria-hidden="true"></span></button></h3>
+            <div class="faq__panel" id="faq-5" role="region"><div class="faq__inner"><p>Comisionul flotei este de 9,5% din venitul tău net din aplicație, iar contabilitatea e inclusă, deci nu plătești separat un contabil. Restul detaliilor ți le explicăm direct, înainte de orice decizie. Contactează-ne pe WhatsApp sau telefonic.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q"><button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-6">Cât durează procesul de înscriere?<span class="faq__plus" aria-hidden="true"></span></button></h3>
+            <div class="faq__panel" id="faq-6" role="region"><div class="faq__inner"><p>Durata depinde de documentele pe care le ai deja și de verificările efectuate de platforme și de autorități, așa că nu putem garanta un termen fix. Îți oferim o estimare după ce discutăm situația ta.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q"><button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-7">Cum pot lua legătura cu un reprezentant al flotei?<span class="faq__plus" aria-hidden="true"></span></button></h3>
+            <div class="faq__panel" id="faq-7" role="region"><div class="faq__inner"><p>Ne poți scrie pe <a class="link" data-contact="whatsapp" href="https://wa.me/40752266727" target="_blank" rel="noopener">WhatsApp</a>, ne poți suna la <a class="link" data-contact="phone" href="tel:+40752266727"><span data-contact-label="phone">0752 266 727</span></a> sau ne poți trimite un e-mail la <a class="link" data-contact="email" href="mailto:babauvlad@gmail.com"><span data-contact-label="email">babauvlad@gmail.com</span></a>.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section class="section section--cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta__glow" aria-hidden="true"></div>
+          <h2 class="cta__title" id="cta-title">Ești gata să faci următorul pas?</h2>
+          <p class="cta__text">Lasă-ne datele tale sau scrie-ne direct pe WhatsApp și discutăm despre posibilitatea de a colabora.</p>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="#inscriere">Înscrie-te în flotă</a>
+            <a class="btn btn--wa btn--lg" data-contact="whatsapp" href="https://wa.me/40752266727" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.6c.2 2.6 2.4 5 5.2 5.6l1.1-1.2 1.8.9-.4 1.5c-3.8.3-8.2-3.7-8-7.6l1.5-.4.9 1.7z"/></svg>
+              Scrie-ne pe WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="#acasa">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 100 100"><rect x="26" y="22" width="9" height="56" fill="currentColor"/><path d="M40 22 H56 A13 13 0 0 1 56 48 H40 Z M40 52 H59 A13 13 0 0 1 59 78 H40 Z" fill="currentColor"/></svg>
+            </span>
+            <span class="brand__name"><span class="brand__bbw">BBW</span><span class="brand__sub">Vehicle Fleet</span></span>
+          </a>
+          <p class="footer__text">Flotă parteneră pentru șoferi Bolt și Uber în București și Buzău.</p>
+        </div>
+
+        <div>
+          <h2 class="footer__title">Contact</h2>
+          <ul class="footer__list">
+            <li><a data-contact="phone" href="tel:+40752266727">Telefon: <span data-contact-label="phone">0752 266 727</span></a></li>
+            <li><a data-contact="whatsapp" href="https://wa.me/40752266727" target="_blank" rel="noopener">WhatsApp: <span data-contact-label="phone">0752 266 727</span></a></li>
+            <li><a data-contact="email" href="mailto:babauvlad@gmail.com"><span data-contact-label="email">babauvlad@gmail.com</span></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer__title">Navigație</h2>
+          <ul class="footer__list">
+            <li><a href="#acasa">Acasă</a></li>
+            <li><a href="#avantaje">Avantaje</a></li>
+            <li><a href="#cum-functioneaza">Cum funcționează</a></li>
+            <li><a href="#verifica-masina">Verifică mașina</a></li>
+            <li><a href="#intrebari">Întrebări frecvente</a></li>
+            <li><a href="#inscriere">Înscriere</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer__title">Date personale</h2>
+          <p class="footer__text footer__text--sm">Datele din formular sunt folosite doar pentru a te contacta în legătură cu înscrierea în flotă. Site-ul nu le stochează; ele ajung la noi numai prin mesajul WhatsApp trimis de tine.</p>
+          <a class="link" href="#politica-confidentialitate" data-open-privacy>Politica de confidențialitate</a>
+        </div>
+      </div>
+
+      <div class="footer__legal">
+        <!-- DE COMPLETAT: datele juridice reale ale operatorului -->
+        <p>Operator: [DENUMIREA OPERATORULUI] · CUI: [CUI] · Nr. Reg. Com.: [NR. REG. COM.] · Sediu: [ADRESA SEDIULUI]</p>
+        <p>Bolt și Uber sunt mărci ale proprietarilor lor. Acesta nu este un site oficial Bolt sau Uber.</p>
+        <p>© <span id="year">2026</span> <span data-fleet-name>BBW vehicle fleet</span>. Toate drepturile rezervate.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Buton WhatsApp flotant (se ascunde automat în zona formularului) -->
+  <a class="wa-float" id="wa-float" data-contact="whatsapp" href="https://wa.me/40752266727" target="_blank" rel="noopener" aria-label="Scrie-ne pe WhatsApp">
+    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.6c.2 2.6 2.4 5 5.2 5.6l1.1-1.2 1.8.9-.4 1.5c-3.8.3-8.2-3.7-8-7.6l1.5-.4.9 1.7z"/></svg>
+    <span class="wa-float__label">WhatsApp</span>
+  </a>
+
+  <!-- ========== POLITICA DE CONFIDENȚIALITATE (model de completat) ========== -->
+  <dialog class="dialog" id="politica-confidentialitate" aria-labelledby="privacy-title">
+    <div class="dialog__head">
+      <h2 class="dialog__title" id="privacy-title">Politica de confidențialitate</h2>
+      <button class="dialog__close" type="button" data-close-privacy aria-label="Închide">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="dialog__body">
+      <p class="dialog__warn"><strong>Model de completat.</strong> Operatorul trebuie să completeze și să verifice aceste informații (ideal cu un specialist în protecția datelor) înainte de publicarea site-ului. Acest text nu înlocuiește automat obligațiile legale aplicabile.</p>
+
+      <h3>1. Cine suntem</h3>
+      <p>Operatorul datelor este [DENUMIREA OPERATORULUI], CUI [CUI], cu sediul în [ADRESA SEDIULUI], care activează sub numele <span data-fleet-name>BBW vehicle fleet</span>. Contact: <a class="link" data-contact="email" href="mailto:babauvlad@gmail.com"><span data-contact-label="email">babauvlad@gmail.com</span></a>.</p>
+
+      <h3>2. Ce date colectăm</h3>
+      <p>Nume și prenume, număr de telefon, adresa de e-mail (opțional), orașul dorit, platforma de interes, experiența ca șofer ridesharing, dacă ai mașină proprie și mesajul opțional.</p>
+
+      <h3>3. De ce folosim datele</h3>
+      <p>Exclusiv pentru a analiza cererea ta de colaborare și pentru a te contacta în legătură cu înscrierea în flotă. Temeiul este efectuarea de demersuri la cererea ta înaintea unei eventuale colaborări (art. 6 alin. (1) lit. b din Regulamentul (UE) 2016/679 — GDPR). [DE VERIFICAT DE OPERATOR]</p>
+
+      <h3>4. Cum ajung datele la noi</h3>
+      <p>Site-ul nu stochează datele și nu le trimite către un server. După validare, formularul generează un mesaj pe care îl poți deschide în WhatsApp. Datele ajung la noi numai dacă tu trimiți mesajul. WhatsApp este un serviciu furnizat de un terț, cu propria politică de confidențialitate.</p>
+
+      <h3>5. Cât timp păstrăm datele</h3>
+      <p>[DE COMPLETAT: perioada de păstrare a conversațiilor și a datelor candidaților, de exemplu până la finalizarea procesului de selecție plus o perioadă determinată.]</p>
+
+      <h3>6. Drepturile tale</h3>
+      <p>Ai dreptul de acces, rectificare, ștergere, restricționare a prelucrării, portabilitate și opoziție, precum și dreptul de a depune o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP). Pentru exercitarea drepturilor, scrie-ne la adresa de e-mail de mai sus.</p>
+
+      <h3>7. Cookie-uri</h3>
+      <p>Site-ul nu folosește cookie-uri proprii de urmărire. Fonturile sunt încărcate de la Google Fonts. [DE ACTUALIZAT dacă adaugi instrumente de analiză sau marketing.]</p>
+    </div>
+  </dialog>
+</body>
+</html>
